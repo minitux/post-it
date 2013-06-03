@@ -1,0 +1,95 @@
+- Creer un depot 
+
+git init
+git init --bare  (Sur le serveur )
+
+- Cloner un depot 
+
+git clone http://github.com/symfony/symfony.git
+
+- Status des commits / liste des changements
+
+git status
+
+- diff sur les commits 
+
+git diff 
+
+- Ajout de fichiers sur git 
+
+git add monfichier1 
+
+- Commit des modifs (en local) 
+
+git add monfichier1 monfichier2  
+git commit 
+
+ou 
+
+git commit -a (pour commiter tous les fichiers listés du git status) 
+
+- Consulter l'historique des commits 
+
+git log
+git log -p ( pour avoir les numéros de lignes modifiées) 
+git log --stat ( résumé plus court des commits) 
+
+- Modifier le dernier message du commit 
+
+git commit --amend 
+
+- Annuler le dernier commit 
+
+git reset HEAD^ (et revenir à l'avant-dernier) 
+
+HEAD : dernier commit ; HEAD^ : avant-dernier commit ; HEAD^^ : avant-avant-dernier commit ; HEAD~2 : avant-avant-dernier commit (notation équivalente) ; d6d98923868578a7f38dea79833b56d0326fcba1 : indique un numéro de commit précis ; d6d9892 : indique un numéro de commit précis (notation équivalente à la précédente, bien souvent écrire les premiers chiffres est suffisant tant qu’aucun autre commit ne commence par les mêmes chiffres).
+
+- Annuler le dernier commit et les changements du dernier commit 
+
+git reset --hard HEAD^
+
+- Annuler les modifications d’un fichier avant un commit
+
+git checkout nomfichier
+
+- Annuler un fichier de git add 
+
+git reset HEAD -- fichier_a_supprimer
+
+- Télécharger les nouveautés du serveur 
+
+git pull
+
+- Envoyer ses commits 
+
+git push
+
+- Annuler un commit publié 
+
+git revert id_commit
+
+- Lister les branches 
+
+git branch
+
+- Creer une branche
+
+git branch mabranche 
+
+- Changer de branche 
+
+git checkout mabranche
+
+- Fusionner les branches 
+
+avoir fait un commit sur la branche 
+revenir sur la branch master (git checkout master) 
+git merge mabranche
+
+- Supprimer une branche 
+
+git branch -d mabranche
+git branch -D mabranche // pour forcer la suppression 
+
+
+
