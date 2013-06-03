@@ -91,5 +91,31 @@ git merge mabranche
 git branch -d mabranche
 git branch -D mabranche // pour forcer la suppression 
 
+- Mettre de coté son travail 
+
+git stash
+
+- Récupérer son travail 
+
+git stash apply 
+
+- Tagguer une version 
+
+git tag NOMTAG IDCOMMIT 
+git push --tags (pour le pousser vers le serveur) 
+
+- Supprimer un tag 
+
+git tag -d NOMTAG
+
+- Recherche dans un fichier source 
+
+git grep "TODO"
+git grep -n "TODO" ( pour afficher le numéro de ligne) 
+
+- Ignorer des fichiers
+
+ajouter dans le fichier .gitignore 
+
 
 
