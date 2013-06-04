@@ -11,10 +11,6 @@ git clone http://github.com/symfony/symfony.git
 
 git status
 
-- diff sur les commits 
-
-git diff 
-
 - Ajout de fichiers sur git 
 
 git add monfichier1 
@@ -28,11 +24,18 @@ ou
 
 git commit -a (pour commiter tous les fichiers listés du git status) 
 
+- diff sur les commits 
+
+git diff 
+
 - Consulter l'historique des commits 
 
 git log
 git log -p ( pour avoir les numéros de lignes modifiées) 
 git log --stat ( résumé plus court des commits) 
+git log --pretty=oneline
+git log --pretty=format:"%h ? %an, %ar : %s"
+git log --pretty=format:"%h %s" --graph
 
 - Modifier le dernier message du commit 
 
